@@ -26,6 +26,7 @@
 		}
 	},
 	"support" : {
+		"source": "https://github.com/assayer-pro/yii2-scrollup-widget",
 		"issues" : "https://github.com/assayer-pro/yii2-scrollup-widget/issues"
 	}
 }
