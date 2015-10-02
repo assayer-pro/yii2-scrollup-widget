@@ -18,6 +18,7 @@
 		}
 	],
 	"require" : {
+		"bower-asset/scrollup": "*",
 		"yiisoft/yii2" : "*"
 	},
 	"autoload" : {
