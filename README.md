@@ -32,10 +32,10 @@ Usage
 Once the extension is installed, simply use it in your code by :
 
 ```php
-<?php 
-	 		
-use raoul2000\widget\scrollup\Scrollup;
- 
+<?php
+
+use assayerpro\scrollup\Scrollup;
+
 Scrollup::widget([
 	'theme' => Scrollup::THEME_IMAGE,
 	'pluginOptions' => [

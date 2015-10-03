@@ -1,5 +1,5 @@
 <?php
-namespace raoul2000\widget\scrollup;
+namespace assayerpro\scrollup;
 
 use Yii;
 use yii\base\Widget;
