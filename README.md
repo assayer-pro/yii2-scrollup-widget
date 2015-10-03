@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist raoul2000/yii2-scrollup-widget "*"
+php composer.phar require --prefer-dist assayer-pro/yii2-scrollup-widget "*"
 ```
 
 or add
 
 ```
-"raoul2000/yii2-scrollup-widget": "*"
+"assayer-pro/yii2-scrollup-widget": "*"
 ```
 
 to the require section of your `composer.json` file.
