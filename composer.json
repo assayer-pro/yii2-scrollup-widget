@@ -18,11 +18,12 @@
 		}
 	],
 	"require" : {
+		"bower-asset/scrollup": "*",
 		"yiisoft/yii2" : "*"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"assayerpro\\widget\\scrollup\\" : ""
+			"assayerpro\\scrollup\\" : ""
 		}
 	},
 	"support" : {

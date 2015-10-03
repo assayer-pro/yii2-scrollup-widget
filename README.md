@@ -32,10 +32,10 @@ Usage
 Once the extension is installed, simply use it in your code by :
 
 ```php
-<?php 
-	 		
-use raoul2000\widget\scrollup\Scrollup;
- 
+<?php
+
+use assayerpro\scrollup\Scrollup;
+
 Scrollup::widget([
 	'theme' => Scrollup::THEME_IMAGE,
 	'pluginOptions' => [
@@ -55,6 +55,28 @@ Scrollup::widget([
 If you wish to use your own styling for the scroll-up, just remove the 'theme' option and provide the required CSS style.
 
 For more information on the plugin options and usage, please refer to [scrollUp jQuery plugin Home page](http://markgoodyear.com/2013/01/scrollup-jquery-plugin/).
+
+Use minified version of js
+--------------------------
+
+In your config file set this up.
+
+```php
+'components' => [ // Check that you are inside "components" section
+	'assetManager' => [
+		'bundles' => [
+			'assayerpro\scrollup\ScrollupAsset' => [
+				'js' => [
+					YII_ENV_DEV ? 'jquery.scrollUp.js' : 'jquery.scrollUp.min.js',
+				],
+			],
+		],
+	],
+	// ... Some other components
+],
+```
+This way in Development environment you'll have the unminified version, but in
+Production Yii will use the minified file.
 
 License
 -------
