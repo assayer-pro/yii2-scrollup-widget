@@ -5,6 +5,7 @@ use yii\web\AssetBundle;
 
 /**
  *
+ * @author Serge Larin <serge.larin@gmail.com>
  * @author Raoul <raoul.boulard@gmail.com>
  */
 class ScrollupAsset extends AssetBundle
