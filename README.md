@@ -56,6 +56,28 @@ If you wish to use your own styling for the scroll-up, just remove the 'theme' o
 
 For more information on the plugin options and usage, please refer to [scrollUp jQuery plugin Home page](http://markgoodyear.com/2013/01/scrollup-jquery-plugin/).
 
+Use minified version of js
+--------------------------
+
+In your config file set this up.
+
+```php
+'components' => [ // Check that you are inside "components" section
+	'assetManager' => [
+		'bundles' => [
+			'assayerpro\scrollup\ScrollupAsset' => [
+				'js' => [
+					YII_ENV_DEV ? 'jquery.scrollUp.js' : 'jquery.scrollUp.min.js',
+				],
+			],
+		],
+	],
+	// ... Some other components
+],
+```
+This way in Development environment you'll have the unminified version, but in
+Production Yii will use the minified file.
+
 License
 -------
 
